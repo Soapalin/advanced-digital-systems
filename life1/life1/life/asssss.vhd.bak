@@ -1,0 +1,53 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity threebitcount is
+Port (clk, rst, switch : in std_logic;
+output : out std_logic_vector (2 downto 0));
+end threebitcount;
+
+architecture behavioural of threebitcount is
+signal count_out : std_logic_vector (2 downto 0);
+signal firststatecondition : std_logic := '1';
+
+signal clktemp1 : std_logic;
+signal counter1 : integer range 0 to 24999999 := 0;
+
+begin 
+	
+	frequency_divider : process(clk)
+		begin 
+			if (rising_edge(clk)) then 
+				if (counter1 = 24999999) then
+					clktemp1 <= NOT(clktemp1);
+					counter1 <= 0;
+				else
+					counter1 <= counter1 + 1;
+				end if;
+			end if;
+		end process;
+
+		process(clktemp1, rst, switch)
+			begin
+				if (rst = '1'and (switch = '1' or switch = '0')) then
+					count_out <= "000";
+					
+				elsif (switch = '1' and rising_edge(clk)) then
+					count_out <= "011";
+					
+					
+					count_out <= count_out - 1;
+					
+					if (count_out = "000" and firststatecondition = '1') then 
+						count_out <= "110";
+						firststatecondition <= '0';
+					elsif(count_out = "000" and firststatecondition = '0') then
+						count_out <= "111";
+						
+					end if;
+				end if;
+		end process;
+	output <= count_out;
+end behavioural;

@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity threebitcount is
+Port (clk, rst, switch : in STD_LOGIC;
+output : out STD_LOGIC_VECTOR (2 downto 0));
+end threebitcount;
+
+architecture behavioural of threebitcount is
+signal count_out : std_logic_vector (2 downto 0);
+
+	begin
+		process(clk, rst, switch)
+			begin
+				if (rst = '1'and (switch = '1' or switch = '0')) then
+					count_out <= "000";
+					
+				elsif (switch = '1' and rising_edge(clk)) then
+					count_out <= "110";
+					
+					if (count_out = "000") then 
+						count_out <= "110";
+						
+					else
+						count_out <= count_out - 1;
+					end if;
+				end if;
+		end process;
+	output <= count_out;
+end behavioural;

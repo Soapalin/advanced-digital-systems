@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[6]",
+					"strict" : false
+				},
+				{
+					"name" : "graycode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "graycode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "graycode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "graycode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

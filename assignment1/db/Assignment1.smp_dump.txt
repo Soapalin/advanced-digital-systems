@@ -1,0 +1,6 @@
+
+State Machine - |sequential|current_state
+Name current_state.C current_state.B current_state.A 
+current_state.A 0 0 0 
+current_state.B 0 1 1 
+current_state.C 1 0 1 

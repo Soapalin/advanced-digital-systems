@@ -1,0 +1,33 @@
+|assignment2
+clk_in => output~reg0.CLK
+clk_in => counter1[0].CLK
+clk_in => counter1[1].CLK
+clk_in => counter1[2].CLK
+clk_in => counter1[3].CLK
+clk_in => counter1[4].CLK
+clk_in => counter1[5].CLK
+clk_in => counter1[6].CLK
+clk_in => counter1[7].CLK
+clk_in => counter1[8].CLK
+clk_in => counter1[9].CLK
+clk_in => counter1[10].CLK
+clk_in => counter1[11].CLK
+clk_in => counter1[12].CLK
+clk_in => counter1[13].CLK
+clk_in => counter1[14].CLK
+clk_in => counter1[15].CLK
+clk_in => counter1[16].CLK
+clk_in => counter1[17].CLK
+clk_in => counter1[18].CLK
+clk_in => counter1[19].CLK
+clk_in => counter1[20].CLK
+clk_in => counter1[21].CLK
+clk_in => counter1[22].CLK
+clk_in => counter1[23].CLK
+clk_in => counter1[24].CLK
+clk_in => clktemp1.CLK
+start_stop => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

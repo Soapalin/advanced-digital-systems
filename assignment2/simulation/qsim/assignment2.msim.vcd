@@ -1,0 +1,454 @@
+$comment
+	File created using the following command:
+		vcd file assignment2.msim.vcd -direction
+$end
+$date
+	Fri Sep 13 17:18:40 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module assignment2_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " output [2] $end
+$var wire 1 # output [1] $end
+$var wire 1 $ output [0] $end
+$var wire 1 % rst $end
+$var wire 1 & switch $end
+
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var wire 1 * devoe $end
+$var wire 1 + devclrn $end
+$var wire 1 , devpor $end
+$var wire 1 - ww_devoe $end
+$var wire 1 . ww_devclrn $end
+$var wire 1 / ww_devpor $end
+$var wire 1 0 ww_clk $end
+$var wire 1 1 ww_rst $end
+$var wire 1 2 ww_switch $end
+$var wire 1 3 ww_output [2] $end
+$var wire 1 4 ww_output [1] $end
+$var wire 1 5 ww_output [0] $end
+$var wire 1 6 \rst~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 7 \rst~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 8 \rst~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 9 \rst~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 : \clk~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 ; \clk~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 < \clk~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 = \clk~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 > \output[0]~output_o\ $end
+$var wire 1 ? \output[1]~output_o\ $end
+$var wire 1 @ \output[2]~output_o\ $end
+$var wire 1 A \clk~input_o\ $end
+$var wire 1 B \clk~inputclkctrl_outclk\ $end
+$var wire 1 C \count_out[0]~2_combout\ $end
+$var wire 1 D \rst~input_o\ $end
+$var wire 1 E \rst~inputclkctrl_outclk\ $end
+$var wire 1 F \switch~input_o\ $end
+$var wire 1 G \count_out~0_combout\ $end
+$var wire 1 H \firststatecondition~0_combout\ $end
+$var wire 1 I \firststatecondition~1_combout\ $end
+$var wire 1 J \firststatecondition~q\ $end
+$var wire 1 K \count_out~1_combout\ $end
+$var wire 1 L count_out [2] $end
+$var wire 1 M count_out [1] $end
+$var wire 1 N count_out [0] $end
+$var wire 1 O \ALT_INV_rst~inputclkctrl_outclk\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0%
+0&
+0'
+1(
+x)
+1*
+1+
+1,
+1-
+1.
+1/
+00
+01
+02
+0>
+0?
+0@
+0A
+0B
+1C
+0D
+0E
+0F
+1G
+0H
+0I
+0J
+0K
+1O
+03
+04
+05
+0L
+0M
+0N
+1:
+1;
+1<
+0=
+16
+17
+18
+09
+0"
+0#
+0$
+$end
+#20000
+1!
+10
+1A
+1=
+1B
+#40000
+0!
+00
+0A
+0=
+0B
+#60000
+1!
+10
+1A
+1=
+1B
+#80000
+0!
+1&
+00
+12
+1F
+0A
+0=
+1I
+0B
+#100000
+1!
+10
+1A
+1=
+1B
+1N
+1M
+1J
+0C
+1H
+1?
+1>
+14
+15
+1$
+1#
+#120000
+0!
+0&
+00
+02
+0F
+0A
+0=
+0B
+#130000
+1%
+11
+1D
+19
+1E
+0O
+0N
+0M
+1C
+1K
+0?
+0>
+04
+05
+0$
+0#
+#140000
+1!
+10
+1A
+1=
+1B
+#160000
+0!
+00
+0A
+0=
+0B
+#180000
+1!
+10
+1A
+1=
+1B
+#200000
+0!
+00
+0A
+0=
+0B
+#220000
+1!
+10
+1A
+1=
+1B
+#240000
+0!
+00
+0A
+0=
+0B
+#260000
+1!
+10
+1A
+1=
+1B
+#280000
+0!
+00
+0A
+0=
+0B
+#300000
+1!
+10
+1A
+1=
+1B
+#320000
+0!
+00
+0A
+0=
+0B
+#340000
+1!
+10
+1A
+1=
+1B
+#360000
+0!
+00
+0A
+0=
+0B
+#380000
+1!
+10
+1A
+1=
+1B
+#400000
+0!
+00
+0A
+0=
+0B
+#420000
+1!
+10
+1A
+1=
+1B
+#440000
+0!
+00
+0A
+0=
+0B
+#460000
+1!
+10
+1A
+1=
+1B
+#480000
+0!
+0%
+00
+01
+0D
+0A
+09
+0=
+0H
+0B
+0E
+1O
+#500000
+1!
+10
+1A
+1=
+1B
+#520000
+0!
+00
+0A
+0=
+0B
+#540000
+1!
+10
+1A
+1=
+1B
+#560000
+0!
+00
+0A
+0=
+0B
+#580000
+1!
+10
+1A
+1=
+1B
+#600000
+0!
+00
+0A
+0=
+0B
+#620000
+1!
+10
+1A
+1=
+1B
+#640000
+0!
+00
+0A
+0=
+0B
+#660000
+1!
+10
+1A
+1=
+1B
+#680000
+0!
+00
+0A
+0=
+0B
+#700000
+1!
+10
+1A
+1=
+1B
+#720000
+0!
+00
+0A
+0=
+0B
+#740000
+1!
+10
+1A
+1=
+1B
+#760000
+0!
+00
+0A
+0=
+0B
+#780000
+1!
+10
+1A
+1=
+1B
+#800000
+0!
+00
+0A
+0=
+0B
+#820000
+1!
+10
+1A
+1=
+1B
+#840000
+0!
+00
+0A
+0=
+0B
+#860000
+1!
+10
+1A
+1=
+1B
+#880000
+0!
+00
+0A
+0=
+0B
+#900000
+1!
+10
+1A
+1=
+1B
+#920000
+0!
+00
+0A
+0=
+0B
+#940000
+1!
+10
+1A
+1=
+1B
+#960000
+0!
+00
+0A
+0=
+0B
+#980000
+1!
+10
+1A
+1=
+1B
+#1000000

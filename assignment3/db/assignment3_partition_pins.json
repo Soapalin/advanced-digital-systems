@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "digit3",
+					"strict" : false
+				},
+				{
+					"name" : "digit4",
+					"strict" : false
+				},
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[5]",
+					"strict" : false
+				},
+				{
+					"name" : "output_bcd[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "startstop",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "updown",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
